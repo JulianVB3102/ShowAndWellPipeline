@@ -30,7 +30,7 @@ venv/
 *.tmp
 *.bak
 
-# === Data outputs & local artifacts ===
+# === Data outputs & local artifacts ==
 # keep repo light; pipeline writes these at runtime
 data/
 !data/.keep        # uncomment if you want to keep the folder tracked
