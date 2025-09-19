@@ -1,0 +1,56 @@
+# === OS / Editor junk ===
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+.vscode/
+.idea/
+
+# === Python ===
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.egg
+*.egg-info/
+.eggs/
+.build/
+dist/
+.venv/
+venv/
+.envrc
+
+# === Secrets / Local config ===
+.env
+*.key
+*.pem
+
+# === Logs / temp ===
+*.log
+*.tmp
+*.bak
+
+# === Data outputs & local artifacts ===
+# keep repo light; pipeline writes these at runtime
+data/
+!data/.keep        # uncomment if you want to keep the folder tracked
+
+# BigQuery export/downloads in Cloud Shell home
+/provider_map.csv
+/provider_directory_tiered*.csv
+
+# Common notebook caches (if you add notebooks later)
+.ipynb_checkpoints/
+
+# === Node (just in case future front-end assets sneak in) ===
+node_modules/
+npm-debug.log*
+yarn-error.log*
+
+# === Mac/Linux metadata ===
+.AppleDouble
+.LSOverride
+.Trashes
+._*
+.Spotlight-V100
+.fseventsd
