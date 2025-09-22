@@ -31,11 +31,20 @@ Views: tiered directory and map-ready view with lat/lon + distance
 CSV: ~/provider_map.csv for Tableau
 
 scripts/
+
   fetch_places_ratings.py      # ratings via Places (New) searchText
+  
   fetch_place_details.py       # place details → locations.csv (+enrich providers)
+  
   run_all.sh                   # orchestrates end-to-end
+  
 sql/
+
   10_silver_views.sql          # typed views + geo
+  
   20_gold_views.sql            # tiering + map view
+  
 .github/workflows/
+
   shellcheck.yml               # CI lint for shell scripts
+  
